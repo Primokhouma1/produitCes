@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.progress-container {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: green;
+    width: 0;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.percentage {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.red-text {
+    color: red;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.field label {
+    flex-basis: 30%;
+    margin-right: 10px;
+}
+
+.field input {
+    flex-grow: 1;
+}
+
+
+.step {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin: 20px auto;
+}
+
+#owner-fields {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.new-quote-button {
+    margin-left: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.breadcrumb-step {
+    font-size: 14px;
+    text-align: center;
+    width: calc(90% / 8 - 10px);
+}
+
+.breadcrumb-step.active {
+    font-weight: bold;
+    color: green;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .progress-container,
+    .step,
+    .breadcrumb {
+        width: 90%;
+    }
+    #breadcrumb-step4 {
+        white-space: pre-line;
+    }
+
+    .breadcrumb-step {
+        font-size: 12px;
+        text-align: center;
+        width: calc(20% - 10px);
+    }
+}
+
+/* Tablette */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .progress-container,
+    .step,
+    .breadcrumb {
+        width: 90%;
+    }
+
+    .breadcrumb-step {
+        font-size: 12px;
+        text-align: center;
+        width: calc(20% - 10px);
+    }
+}
+
+/* Bureau */
+@media only screen and (min-width: 1025px) {
+    .progress-container,
+    .step,
+    .breadcrumb {
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Classes pour le loader en soumission de formulaire */
+.loader{
+	background: url('images/loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+	cursor: wait;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+	.loader h1{
+		background: none;
+		border: none;
+		color: #458976;
+		font-size: 22px;
+		font-family: "Open Sans",sans-serif;
+		font-variant: small-caps;
+		font-weight: 700;
+		height: 700px;
+		line-height: 700px;
+		margin: 0 0 10px;
+		padding: 0;
+		text-align: center;
+	}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none !important;
+}
